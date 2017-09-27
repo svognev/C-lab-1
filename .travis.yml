@@ -4,5 +4,4 @@ compiler:
 os:
  - linux
 script:
-    cd work/b1
     gcc -o task1 task1.c main.c
