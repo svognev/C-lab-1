@@ -6,4 +6,5 @@ os:
  - linux
  - osx
 script:
+    cd work/b1
     gcc -o task1 task1.c main.c
