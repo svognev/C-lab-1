@@ -4,4 +4,4 @@ compiler:
 os:
  - linux
 script:
-    gcc -o work/b1/task1 work/b1/task1.c work/b1/main.c
+    gcc -o work/task1 work/task1.c work/main1.c
