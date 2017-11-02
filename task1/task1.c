@@ -1,4 +1,3 @@
-#include <string.h>
 #include "task1.h"
 
 float calcIdealWeight(char gender, float height)
