@@ -5,27 +5,28 @@
 
 int main()
 {
-	char gender[2];
-	float height=0, weight=0;
-	float ex_weight=0;
+	char gender;
+	float height, weight;
+	int getRec;
 
 	do
 	{
-		printf("Введите ваш пол: m - для мужчин, w - для женщин\n");
-		scanf("%s", gender);
-	} while ((strcmp(gender, "m") != 0) && (strcmp(gender, "w") != 0));
+		printf("Enter your gender: m - man, w - woman \n");
+		scanf("%c", &gender);
+	} while ((gender != 'm') && (gender != 'w'));
 			
-	printf("Введите ваш рост, см \n");
+	printf("Enter your height, cm \n");
 	scanf("%f", &height);
-	printf("Введите ваш вес, кг \n");
+	printf("Enter your weight, kg \n");
 	scanf("%f", &weight);
-
-	if (getRecommendation(gender, height, weight)==0)
-		printf("Ваш вес идеален \n");
-	else if (getRecommendation(gender, height, weight) == 1)
-		printf("Ваш вес избыточен \n");
-	else if (getRecommendation(gender, height, weight) == -1)
-		printf("Ваш вес недостаточен \n");
+	getRec = getRecommendation(gender, height, weight);
+	
+	if (getRec == 0)
+		printf("Your weight is perfect \n");
+	else if (getRec == 1)
+		printf("Your weight is big \n");
+	else if (getRec == -1)
+		printf("Your weight is small \n");
 
 	return 0;
 }
