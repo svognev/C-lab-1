@@ -2,8 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include"task1.h"
-#include<conio.h>
-#define SIZE 6
+
 int main()// the programm that prompts the users : gender, height and weight, 
           //and then analyzes the ratio height and weight 
 	      //and recomendation for further action
