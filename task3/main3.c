@@ -11,6 +11,6 @@ int main()
 	printf("Enter angle in Radians or Degrees. Example: 45.00R\n");
 	scanf("%lf%c", &angle, &type);
 	convert(buf, angle, type);
-	printf("%s", buf);
+	printf("%s\n", buf);
 	return 0;
 }

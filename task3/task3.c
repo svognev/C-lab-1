@@ -5,15 +5,14 @@
 #include "task3.h"
 
 char * convert(char buf[], double angle, char type) {
-	if (&type == "R"))
+	if (type == 'R')
 	{
-		double anglesInDegrees = (angle * 180.0 / M_PI);
-		sprintf(&buf, "%f%s", anglesInDegrees, "D\0");
+		sprintf(buf, "%lfD\0", (angle * 180.0 / M_PI));
 		return buf;
 	}
-	if (&type == "D"))
+	if (type == 'D')
 	{
-		sprintf(&buf, "%lf%s", (angle * M_PI / 180.0), "R\0");
+		sprintf(buf, "%lfR\0", (angle * M_PI / 180.0));
 		return buf;
 	}
 	else
