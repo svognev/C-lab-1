@@ -1,12 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "task2.h"
-#include <Windows.h>
+//#include <Windows.h>
 
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+	//SetConsoleCP(1251);
+	//SetConsoleOutputCP(1251);
 	int hour = 0;
 	int min = 0;
 	int sec = 0;

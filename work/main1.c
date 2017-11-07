@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include "task1.h"
 #include <locale.h>
-#include <Windows.h>
+//#include <Windows.h>
 
 
 int main()
 {
 	//setlocale(LC_ALL, "Rus");
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+	//SetConsoleCP(1251);
+	//SetConsoleOutputCP(1251);
 	char gender;
 	float height;
 	float weight;
