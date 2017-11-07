@@ -4,13 +4,13 @@
 
 int main()
 {
-	char gender[2];
+	char gender;
 	float weight = 0, height = 0;
 
 	do {
 		printf("Enter your gender: Men(M) or Woman(W)? \n");
-		scanf("%s", &gender);
-	} while ((strcmp(gender, "M") != 0) && (strcmp(gender, "W") != 0));
+		scanf("%c", &gender);
+	} while ((gender != 'M') && (gender != 'W'));
 	
 	printf("Enter your weight: \n");
 	scanf("%f", &weight);
