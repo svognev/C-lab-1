@@ -5,7 +5,7 @@
 //  Created by Ksenia on 12.11.2017.
 //  Copyright © 2017 Ksenia. All rights reserved.
 //
-
+#include <stdio.h>
 #include "task2.h"
 char* greet(int hour, int min)
 {
@@ -51,4 +51,4 @@ char* greet(int hour, int min)
 }
 
 
-#test line
+
