@@ -8,7 +8,7 @@ int main()
 	scanf("%d %d %d", &hour, &min, &sec);
 	if (sec >= 0 && sec <= 59)/*sec ne peredajotsya v greet, proverka budet tut*/ 
 	{
-		printf("%d:%d:%d\n", hour, min, sec);
+		printf("%02d:%02d:%02d\n", hour, min, sec);
 		printf(greet(hour, min));
 	}
 	else printf("Uncorrect time\n");
