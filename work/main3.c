@@ -9,7 +9,11 @@ int main()
 	char type=0;
 	printf("Enter angle:");
 	scanf("%1f%c", &angle, &type);
-	convert(buf, angle, type);
-	printf("%s\n",buf );
+	if ((type == 'd') ||(type == 'r')) {
+		convert(buf, angle, type);
+		printf("%s\n", buf);
+	}
+	else
+		printf("Data error!\n");
 	return 0;
 }
